@@ -1,0 +1,985 @@
+patient_id,age,gender,condition,procedure,cost,length_of_stay,readmission,outcome,satisfaction,age_group,cost_category
+1,45,Female,Heart Disease,Angioplasty,15000.0,5,No,Recovered,4,Adult,Medium
+2,60,Male,Diabetes,Insulin Therapy,2000.0,3,Yes,Stable,3,Middle Age,Low
+3,32,Female,Fractured Arm,X-Ray and Splint,500.0,1,No,Recovered,5,Young Adult,Low
+4,75,Male,Stroke,CT Scan and Medication,10000.0,7,Yes,Stable,2,Senior,Medium
+5,50,Female,Cancer,Surgery and Chemotherapy,25000.0,10,No,Recovered,4,Adult,High
+6,68,Male,Hypertension,Medication and Counseling,1000.0,2,No,Stable,4,Senior,Low
+7,55,Female,Appendicitis,Appendectomy,8000.0,4,No,Recovered,3,Middle Age,Medium
+8,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,6,No,Recovered,4,Adult,Low
+9,70,Female,Heart Attack,Cardiac Catheterization,18000.0,8,Yes,Stable,2,Senior,High
+10,25,Male,Allergic Reaction,Epinephrine Injection,100.0,1,No,Recovered,5,Young Adult,Low
+11,48,Female,Respiratory Infection,Antibiotics and Rest,800.0,2,No,Stable,4,Adult,Low
+12,65,Male,Prostate Cancer,Radiation Therapy,20000.0,9,No,Recovered,3,Middle Age,High
+13,30,Female,Childbirth,Delivery and Postnatal Care,12000.0,3,No,Recovered,4,Young Adult,Medium
+14,52,Male,Kidney Stones,Lithotripsy,6000.0,4,No,Recovered,3,Middle Age,Medium
+15,58,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,5,No,Stable,4,Middle Age,Low
+16,55,Female,Heart Disease,Angioplasty,15000.0,6,Yes,Recovered,3,Middle Age,Medium
+17,62,Male,Diabetes,Insulin Therapy,2000.0,4,No,Stable,4,Middle Age,Low
+18,35,Female,Fractured Arm,X-Ray and Splint,500.0,2,Yes,Recovered,5,Young Adult,Low
+19,78,Male,Stroke,CT Scan and Medication,10000.0,8,No,Stable,2,Senior,Medium
+20,53,Female,Cancer,Surgery and Chemotherapy,25000.0,11,Yes,Recovered,4,Middle Age,High
+21,72,Male,Hypertension,Medication and Counseling,1000.0,3,No,Stable,4,Senior,Low
+22,60,Female,Appendicitis,Appendectomy,8000.0,5,Yes,Recovered,3,Middle Age,Medium
+23,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,7,No,Recovered,4,Adult,Low
+24,75,Female,Heart Attack,Cardiac Catheterization,18000.0,9,Yes,Stable,2,Senior,High
+25,28,Male,Allergic Reaction,Epinephrine Injection,100.0,2,No,Recovered,5,Young Adult,Low
+26,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,3,No,Stable,4,Middle Age,Low
+27,67,Male,Prostate Cancer,Radiation Therapy,20000.0,10,No,Recovered,3,Senior,High
+28,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,4,No,Recovered,4,Young Adult,Medium
+29,50,Male,Kidney Stones,Lithotripsy,6000.0,5,No,Recovered,3,Adult,Medium
+30,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,6,No,Stable,4,Middle Age,Low
+31,48,Female,Heart Disease,Angioplasty,15000.0,7,Yes,Recovered,4,Adult,Medium
+32,65,Male,Diabetes,Insulin Therapy,2000.0,5,No,Stable,3,Middle Age,Low
+33,30,Female,Fractured Arm,X-Ray and Splint,500.0,3,No,Recovered,5,Young Adult,Low
+34,70,Male,Stroke,CT Scan and Medication,10000.0,9,Yes,Stable,2,Senior,Medium
+35,55,Female,Cancer,Surgery and Chemotherapy,25000.0,12,No,Recovered,4,Middle Age,High
+36,68,Male,Hypertension,Medication and Counseling,1000.0,4,No,Stable,4,Senior,Low
+37,45,Female,Appendicitis,Appendectomy,8000.0,6,No,Recovered,3,Adult,Medium
+38,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,8,No,Recovered,4,Adult,Low
+39,78,Female,Heart Attack,Cardiac Catheterization,18000.0,10,Yes,Stable,2,Senior,High
+40,25,Male,Allergic Reaction,Epinephrine Injection,100.0,3,No,Recovered,5,Young Adult,Low
+41,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,4,No,Stable,4,Middle Age,Low
+42,58,Male,Prostate Cancer,Radiation Therapy,20000.0,11,No,Recovered,3,Middle Age,High
+43,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,5,No,Recovered,4,Young Adult,Medium
+44,55,Male,Kidney Stones,Lithotripsy,6000.0,6,No,Recovered,3,Middle Age,Medium
+45,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,7,No,Stable,4,Middle Age,Low
+46,55,Female,Heart Disease,Angioplasty,15000.0,8,Yes,Recovered,3,Middle Age,Medium
+47,62,Male,Diabetes,Insulin Therapy,2000.0,6,No,Stable,4,Middle Age,Low
+48,35,Female,Fractured Arm,X-Ray and Splint,500.0,4,Yes,Recovered,5,Young Adult,Low
+49,78,Male,Stroke,CT Scan and Medication,10000.0,10,No,Stable,2,Senior,Medium
+50,53,Female,Cancer,Surgery and Chemotherapy,25000.0,13,Yes,Recovered,4,Middle Age,High
+51,72,Male,Hypertension,Medication and Counseling,1000.0,5,No,Stable,4,Senior,Low
+52,60,Female,Appendicitis,Appendectomy,8000.0,7,Yes,Recovered,3,Middle Age,Medium
+53,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,9,No,Recovered,4,Adult,Low
+54,75,Female,Heart Attack,Cardiac Catheterization,18000.0,11,Yes,Stable,2,Senior,High
+55,28,Male,Allergic Reaction,Epinephrine Injection,100.0,4,No,Recovered,5,Young Adult,Low
+56,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,5,No,Stable,4,Middle Age,Low
+57,67,Male,Prostate Cancer,Radiation Therapy,20000.0,12,No,Recovered,3,Senior,High
+58,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,6,No,Recovered,4,Young Adult,Medium
+59,50,Male,Kidney Stones,Lithotripsy,6000.0,7,No,Recovered,3,Adult,Medium
+61,48,Female,Heart Disease,Angioplasty,15000.0,9,Yes,Recovered,4,Adult,Medium
+62,65,Male,Diabetes,Insulin Therapy,2000.0,7,No,Stable,3,Middle Age,Low
+63,30,Female,Fractured Arm,X-Ray and Splint,500.0,5,No,Recovered,5,Young Adult,Low
+64,70,Male,Stroke,CT Scan and Medication,10000.0,11,Yes,Stable,2,Senior,Medium
+65,55,Female,Cancer,Surgery and Chemotherapy,25000.0,14,No,Recovered,4,Middle Age,High
+66,68,Male,Hypertension,Medication and Counseling,1000.0,6,No,Stable,4,Senior,Low
+67,45,Female,Appendicitis,Appendectomy,8000.0,8,No,Recovered,3,Adult,Medium
+68,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,10,No,Recovered,4,Adult,Low
+69,78,Female,Heart Attack,Cardiac Catheterization,18000.0,12,Yes,Stable,2,Senior,High
+70,25,Male,Allergic Reaction,Epinephrine Injection,100.0,5,No,Recovered,5,Young Adult,Low
+71,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,6,No,Stable,4,Middle Age,Low
+72,58,Male,Prostate Cancer,Radiation Therapy,20000.0,13,No,Recovered,3,Middle Age,High
+73,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,7,No,Recovered,4,Young Adult,Medium
+74,55,Male,Kidney Stones,Lithotripsy,6000.0,8,No,Recovered,3,Middle Age,Medium
+75,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,9,No,Stable,4,Middle Age,Low
+76,55,Female,Heart Disease,Angioplasty,15000.0,10,Yes,Recovered,3,Middle Age,Medium
+77,62,Male,Diabetes,Insulin Therapy,2000.0,8,No,Stable,4,Middle Age,Low
+78,35,Female,Fractured Arm,X-Ray and Splint,500.0,6,Yes,Recovered,5,Young Adult,Low
+79,78,Male,Stroke,CT Scan and Medication,10000.0,12,No,Stable,2,Senior,Medium
+80,53,Female,Cancer,Surgery and Chemotherapy,25000.0,15,Yes,Recovered,4,Middle Age,High
+81,72,Male,Hypertension,Medication and Counseling,1000.0,7,No,Stable,4,Senior,Low
+82,60,Female,Appendicitis,Appendectomy,8000.0,9,Yes,Recovered,3,Middle Age,Medium
+83,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,11,No,Recovered,4,Adult,Low
+84,75,Female,Heart Attack,Cardiac Catheterization,18000.0,13,Yes,Stable,2,Senior,High
+85,28,Male,Allergic Reaction,Epinephrine Injection,100.0,6,No,Recovered,5,Young Adult,Low
+86,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,7,No,Stable,4,Middle Age,Low
+87,67,Male,Prostate Cancer,Radiation Therapy,20000.0,14,No,Recovered,3,Senior,High
+88,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,8,No,Recovered,4,Young Adult,Medium
+89,50,Male,Kidney Stones,Lithotripsy,6000.0,9,No,Recovered,3,Adult,Medium
+90,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,10,No,Stable,4,Middle Age,Low
+91,48,Female,Heart Disease,Angioplasty,15000.0,11,Yes,Recovered,4,Adult,Medium
+92,65,Male,Diabetes,Insulin Therapy,2000.0,9,No,Stable,3,Middle Age,Low
+93,30,Female,Fractured Arm,X-Ray and Splint,500.0,7,No,Recovered,5,Young Adult,Low
+94,70,Male,Stroke,CT Scan and Medication,10000.0,13,Yes,Stable,2,Senior,Medium
+95,55,Female,Cancer,Surgery and Chemotherapy,25000.0,16,No,Recovered,4,Middle Age,High
+96,68,Male,Hypertension,Medication and Counseling,1000.0,8,No,Stable,4,Senior,Low
+97,45,Female,Appendicitis,Appendectomy,8000.0,10,No,Recovered,3,Adult,Medium
+98,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,12,No,Recovered,4,Adult,Low
+99,78,Female,Heart Attack,Cardiac Catheterization,18000.0,14,Yes,Stable,2,Senior,High
+100,25,Male,Allergic Reaction,Epinephrine Injection,100.0,7,No,Recovered,5,Young Adult,Low
+101,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,8,No,Stable,4,Middle Age,Low
+102,58,Male,Prostate Cancer,Radiation Therapy,20000.0,15,No,Recovered,3,Middle Age,High
+103,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,9,No,Recovered,4,Young Adult,Medium
+104,55,Male,Kidney Stones,Lithotripsy,6000.0,10,No,Recovered,3,Middle Age,Medium
+105,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,11,No,Stable,4,Middle Age,Low
+106,55,Female,Heart Disease,Angioplasty,15000.0,12,Yes,Recovered,3,Middle Age,Medium
+107,62,Male,Diabetes,Insulin Therapy,2000.0,10,No,Stable,4,Middle Age,Low
+108,35,Female,Fractured Arm,X-Ray and Splint,500.0,8,Yes,Recovered,5,Young Adult,Low
+109,78,Male,Stroke,CT Scan and Medication,10000.0,14,No,Stable,2,Senior,Medium
+110,53,Female,Cancer,Surgery and Chemotherapy,25000.0,17,Yes,Recovered,4,Middle Age,High
+111,72,Male,Hypertension,Medication and Counseling,1000.0,9,No,Stable,4,Senior,Low
+112,60,Female,Appendicitis,Appendectomy,8000.0,11,Yes,Recovered,3,Middle Age,Medium
+113,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,13,No,Recovered,4,Adult,Low
+114,75,Female,Heart Attack,Cardiac Catheterization,18000.0,15,Yes,Stable,2,Senior,High
+115,28,Male,Allergic Reaction,Epinephrine Injection,100.0,8,No,Recovered,5,Young Adult,Low
+116,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,9,No,Stable,4,Middle Age,Low
+117,67,Male,Prostate Cancer,Radiation Therapy,20000.0,16,No,Recovered,3,Senior,High
+118,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,10,No,Recovered,4,Young Adult,Medium
+119,50,Male,Kidney Stones,Lithotripsy,6000.0,11,No,Recovered,3,Adult,Medium
+120,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,12,No,Stable,4,Middle Age,Low
+122,65,Male,Diabetes,Insulin Therapy,2000.0,11,No,Stable,3,Middle Age,Low
+123,30,Female,Fractured Arm,X-Ray and Splint,500.0,9,No,Recovered,5,Young Adult,Low
+124,70,Male,Stroke,CT Scan and Medication,10000.0,15,Yes,Stable,2,Senior,Medium
+125,55,Female,Cancer,Surgery and Chemotherapy,25000.0,18,No,Recovered,4,Middle Age,High
+126,68,Male,Hypertension,Medication and Counseling,1000.0,10,No,Stable,4,Senior,Low
+127,45,Female,Appendicitis,Appendectomy,8000.0,12,No,Recovered,3,Adult,Medium
+128,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,14,No,Recovered,4,Adult,Low
+129,78,Female,Heart Attack,Cardiac Catheterization,18000.0,16,Yes,Stable,2,Senior,High
+130,25,Male,Allergic Reaction,Epinephrine Injection,100.0,9,No,Recovered,5,Young Adult,Low
+131,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,10,No,Stable,4,Middle Age,Low
+132,58,Male,Prostate Cancer,Radiation Therapy,20000.0,17,No,Recovered,3,Middle Age,High
+133,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,11,No,Recovered,4,Young Adult,Medium
+134,55,Male,Kidney Stones,Lithotripsy,6000.0,12,No,Recovered,3,Middle Age,Medium
+135,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,13,No,Stable,4,Middle Age,Low
+136,55,Female,Heart Disease,Angioplasty,15000.0,14,Yes,Recovered,3,Middle Age,Medium
+137,62,Male,Diabetes,Insulin Therapy,2000.0,12,No,Stable,4,Middle Age,Low
+138,35,Female,Fractured Arm,X-Ray and Splint,500.0,10,Yes,Recovered,5,Young Adult,Low
+139,78,Male,Stroke,CT Scan and Medication,10000.0,16,No,Stable,2,Senior,Medium
+140,53,Female,Cancer,Surgery and Chemotherapy,25000.0,19,Yes,Recovered,4,Middle Age,High
+141,72,Male,Hypertension,Medication and Counseling,1000.0,11,No,Stable,4,Senior,Low
+142,60,Female,Appendicitis,Appendectomy,8000.0,13,Yes,Recovered,3,Middle Age,Medium
+143,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,15,No,Recovered,4,Adult,Low
+144,75,Female,Heart Attack,Cardiac Catheterization,18000.0,17,Yes,Stable,2,Senior,High
+145,28,Male,Allergic Reaction,Epinephrine Injection,100.0,10,No,Recovered,5,Young Adult,Low
+146,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,11,No,Stable,4,Middle Age,Low
+147,67,Male,Prostate Cancer,Radiation Therapy,20000.0,18,No,Recovered,3,Senior,High
+148,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,12,No,Recovered,4,Young Adult,Medium
+149,50,Male,Kidney Stones,Lithotripsy,6000.0,13,No,Recovered,3,Adult,Medium
+150,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,14,No,Stable,4,Middle Age,Low
+151,48,Female,Heart Disease,Angioplasty,15000.0,15,Yes,Recovered,4,Adult,Medium
+152,65,Male,Diabetes,Insulin Therapy,2000.0,13,No,Stable,3,Middle Age,Low
+153,30,Female,Fractured Arm,X-Ray and Splint,500.0,11,No,Recovered,5,Young Adult,Low
+154,70,Male,Stroke,CT Scan and Medication,10000.0,17,Yes,Stable,2,Senior,Medium
+155,55,Female,Cancer,Surgery and Chemotherapy,25000.0,20,No,Recovered,4,Middle Age,High
+156,68,Male,Hypertension,Medication and Counseling,1000.0,12,No,Stable,4,Senior,Low
+157,45,Female,Appendicitis,Appendectomy,8000.0,14,No,Recovered,3,Adult,Medium
+158,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,16,No,Recovered,4,Adult,Low
+159,78,Female,Heart Attack,Cardiac Catheterization,18000.0,18,Yes,Stable,2,Senior,High
+160,25,Male,Allergic Reaction,Epinephrine Injection,100.0,11,No,Recovered,5,Young Adult,Low
+161,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,12,No,Stable,4,Middle Age,Low
+162,58,Male,Prostate Cancer,Radiation Therapy,20000.0,19,No,Recovered,3,Middle Age,High
+163,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,13,No,Recovered,4,Young Adult,Medium
+164,55,Male,Kidney Stones,Lithotripsy,6000.0,14,No,Recovered,3,Middle Age,Medium
+165,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,15,No,Stable,4,Middle Age,Low
+166,55,Female,Heart Disease,Angioplasty,15000.0,16,Yes,Recovered,3,Middle Age,Medium
+167,62,Male,Diabetes,Insulin Therapy,2000.0,14,No,Stable,4,Middle Age,Low
+168,35,Female,Fractured Arm,X-Ray and Splint,500.0,12,Yes,Recovered,5,Young Adult,Low
+169,78,Male,Stroke,CT Scan and Medication,10000.0,18,No,Stable,2,Senior,Medium
+170,53,Female,Cancer,Surgery and Chemotherapy,25000.0,21,Yes,Recovered,4,Middle Age,High
+171,72,Male,Hypertension,Medication and Counseling,1000.0,13,No,Stable,4,Senior,Low
+172,60,Female,Appendicitis,Appendectomy,8000.0,15,Yes,Recovered,3,Middle Age,Medium
+173,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,17,No,Recovered,4,Adult,Low
+174,75,Female,Heart Attack,Cardiac Catheterization,18000.0,19,Yes,Stable,2,Senior,High
+175,28,Male,Allergic Reaction,Epinephrine Injection,100.0,12,No,Recovered,5,Young Adult,Low
+176,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,13,No,Stable,4,Middle Age,Low
+177,67,Male,Prostate Cancer,Radiation Therapy,20000.0,20,No,Recovered,3,Senior,High
+178,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,14,No,Recovered,4,Young Adult,Medium
+179,50,Male,Kidney Stones,Lithotripsy,6000.0,15,No,Recovered,3,Adult,Medium
+180,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,16,No,Stable,4,Middle Age,Low
+181,48,Female,Heart Disease,Angioplasty,15000.0,17,Yes,Recovered,4,Adult,Medium
+183,30,Female,Fractured Arm,X-Ray and Splint,500.0,13,No,Recovered,5,Young Adult,Low
+184,70,Male,Stroke,CT Scan and Medication,10000.0,19,Yes,Stable,2,Senior,Medium
+185,55,Female,Cancer,Surgery and Chemotherapy,25000.0,22,No,Recovered,4,Middle Age,High
+186,68,Male,Hypertension,Medication and Counseling,1000.0,14,No,Stable,4,Senior,Low
+187,45,Female,Appendicitis,Appendectomy,8000.0,16,No,Recovered,3,Adult,Medium
+188,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,18,No,Recovered,4,Adult,Low
+189,78,Female,Heart Attack,Cardiac Catheterization,18000.0,20,Yes,Stable,2,Senior,High
+190,25,Male,Allergic Reaction,Epinephrine Injection,100.0,13,No,Recovered,5,Young Adult,Low
+191,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,14,No,Stable,4,Middle Age,Low
+192,58,Male,Prostate Cancer,Radiation Therapy,20000.0,21,No,Recovered,3,Middle Age,High
+193,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,15,No,Recovered,4,Young Adult,Medium
+194,55,Male,Kidney Stones,Lithotripsy,6000.0,16,No,Recovered,3,Middle Age,Medium
+195,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,17,No,Stable,4,Middle Age,Low
+196,55,Female,Heart Disease,Angioplasty,15000.0,18,Yes,Recovered,3,Middle Age,Medium
+197,62,Male,Diabetes,Insulin Therapy,2000.0,16,No,Stable,4,Middle Age,Low
+198,35,Female,Fractured Arm,X-Ray and Splint,500.0,14,Yes,Recovered,5,Young Adult,Low
+199,78,Male,Stroke,CT Scan and Medication,10000.0,20,No,Stable,2,Senior,Medium
+200,53,Female,Cancer,Surgery and Chemotherapy,25000.0,23,Yes,Recovered,4,Middle Age,High
+201,72,Male,Hypertension,Medication and Counseling,1000.0,15,No,Stable,4,Senior,Low
+202,60,Female,Appendicitis,Appendectomy,8000.0,17,Yes,Recovered,3,Middle Age,Medium
+203,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,19,No,Recovered,4,Adult,Low
+204,75,Female,Heart Attack,Cardiac Catheterization,18000.0,21,Yes,Stable,2,Senior,High
+205,28,Male,Allergic Reaction,Epinephrine Injection,100.0,14,No,Recovered,5,Young Adult,Low
+206,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,15,No,Stable,4,Middle Age,Low
+207,67,Male,Prostate Cancer,Radiation Therapy,20000.0,22,No,Recovered,3,Senior,High
+208,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,16,No,Recovered,4,Young Adult,Medium
+209,50,Male,Kidney Stones,Lithotripsy,6000.0,17,No,Recovered,3,Adult,Medium
+210,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,18,No,Stable,4,Middle Age,Low
+211,48,Female,Heart Disease,Angioplasty,15000.0,19,Yes,Recovered,4,Adult,Medium
+212,65,Male,Diabetes,Insulin Therapy,2000.0,17,No,Stable,3,Middle Age,Low
+213,30,Female,Fractured Arm,X-Ray and Splint,500.0,15,No,Recovered,5,Young Adult,Low
+214,70,Male,Stroke,CT Scan and Medication,10000.0,21,Yes,Stable,2,Senior,Medium
+215,55,Female,Cancer,Surgery and Chemotherapy,25000.0,24,No,Recovered,4,Middle Age,High
+216,68,Male,Hypertension,Medication and Counseling,1000.0,16,No,Stable,4,Senior,Low
+217,45,Female,Appendicitis,Appendectomy,8000.0,18,No,Recovered,3,Adult,Medium
+218,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,20,No,Recovered,4,Adult,Low
+219,78,Female,Heart Attack,Cardiac Catheterization,18000.0,22,Yes,Stable,2,Senior,High
+220,25,Male,Allergic Reaction,Epinephrine Injection,100.0,15,No,Recovered,5,Young Adult,Low
+221,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,16,No,Stable,4,Middle Age,Low
+222,58,Male,Prostate Cancer,Radiation Therapy,20000.0,23,No,Recovered,3,Middle Age,High
+223,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,17,No,Recovered,4,Young Adult,Medium
+224,55,Male,Kidney Stones,Lithotripsy,6000.0,18,No,Recovered,3,Middle Age,Medium
+225,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,19,No,Stable,4,Middle Age,Low
+226,55,Female,Heart Disease,Angioplasty,15000.0,20,Yes,Recovered,3,Middle Age,Medium
+227,62,Male,Diabetes,Insulin Therapy,2000.0,18,No,Stable,4,Middle Age,Low
+228,35,Female,Fractured Arm,X-Ray and Splint,500.0,16,Yes,Recovered,5,Young Adult,Low
+229,78,Male,Stroke,CT Scan and Medication,10000.0,22,No,Stable,2,Senior,Medium
+230,53,Female,Cancer,Surgery and Chemotherapy,25000.0,25,Yes,Recovered,4,Middle Age,High
+231,72,Male,Hypertension,Medication and Counseling,1000.0,17,No,Stable,4,Senior,Low
+232,60,Female,Appendicitis,Appendectomy,8000.0,19,Yes,Recovered,3,Middle Age,Medium
+233,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,21,No,Recovered,4,Adult,Low
+234,75,Female,Heart Attack,Cardiac Catheterization,18000.0,23,Yes,Stable,2,Senior,High
+235,28,Male,Allergic Reaction,Epinephrine Injection,100.0,16,No,Recovered,5,Young Adult,Low
+236,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,17,No,Stable,4,Middle Age,Low
+237,67,Male,Prostate Cancer,Radiation Therapy,20000.0,24,No,Recovered,3,Senior,High
+238,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,18,No,Recovered,4,Young Adult,Medium
+239,50,Male,Kidney Stones,Lithotripsy,6000.0,19,No,Recovered,3,Adult,Medium
+240,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,20,No,Stable,4,Middle Age,Low
+241,48,Female,Heart Disease,Angioplasty,15000.0,21,Yes,Recovered,4,Adult,Medium
+242,65,Male,Diabetes,Insulin Therapy,2000.0,19,No,Stable,3,Middle Age,Low
+244,70,Male,Stroke,CT Scan and Medication,10000.0,23,Yes,Stable,2,Senior,Medium
+245,55,Female,Cancer,Surgery and Chemotherapy,25000.0,26,No,Recovered,4,Middle Age,High
+246,68,Male,Hypertension,Medication and Counseling,1000.0,18,No,Stable,4,Senior,Low
+247,45,Female,Appendicitis,Appendectomy,8000.0,20,No,Recovered,3,Adult,Medium
+248,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,22,No,Recovered,4,Adult,Low
+249,78,Female,Heart Attack,Cardiac Catheterization,18000.0,24,Yes,Stable,2,Senior,High
+250,25,Male,Allergic Reaction,Epinephrine Injection,100.0,17,No,Recovered,5,Young Adult,Low
+251,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,18,No,Stable,4,Middle Age,Low
+252,58,Male,Prostate Cancer,Radiation Therapy,20000.0,25,No,Recovered,3,Middle Age,High
+253,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,19,No,Recovered,4,Young Adult,Medium
+254,55,Male,Kidney Stones,Lithotripsy,6000.0,20,No,Recovered,3,Middle Age,Medium
+255,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,21,No,Stable,4,Middle Age,Low
+256,55,Female,Heart Disease,Angioplasty,15000.0,22,Yes,Recovered,3,Middle Age,Medium
+257,62,Male,Diabetes,Insulin Therapy,2000.0,20,No,Stable,4,Middle Age,Low
+258,35,Female,Fractured Arm,X-Ray and Splint,500.0,18,Yes,Recovered,5,Young Adult,Low
+259,78,Male,Stroke,CT Scan and Medication,10000.0,24,No,Stable,2,Senior,Medium
+260,53,Female,Cancer,Surgery and Chemotherapy,25000.0,27,Yes,Recovered,4,Middle Age,High
+261,72,Male,Hypertension,Medication and Counseling,1000.0,19,No,Stable,4,Senior,Low
+262,60,Female,Appendicitis,Appendectomy,8000.0,21,Yes,Recovered,3,Middle Age,Medium
+263,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,23,No,Recovered,4,Adult,Low
+264,75,Female,Heart Attack,Cardiac Catheterization,18000.0,25,Yes,Stable,2,Senior,High
+265,28,Male,Allergic Reaction,Epinephrine Injection,100.0,18,No,Recovered,5,Young Adult,Low
+266,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,19,No,Stable,4,Middle Age,Low
+267,67,Male,Prostate Cancer,Radiation Therapy,20000.0,26,No,Recovered,3,Senior,High
+268,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,20,No,Recovered,4,Young Adult,Medium
+269,50,Male,Kidney Stones,Lithotripsy,6000.0,21,No,Recovered,3,Adult,Medium
+270,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,22,No,Stable,4,Middle Age,Low
+271,48,Female,Heart Disease,Angioplasty,15000.0,23,Yes,Recovered,4,Adult,Medium
+272,65,Male,Diabetes,Insulin Therapy,2000.0,21,No,Stable,3,Middle Age,Low
+273,30,Female,Fractured Arm,X-Ray and Splint,500.0,19,No,Recovered,5,Young Adult,Low
+274,70,Male,Stroke,CT Scan and Medication,10000.0,25,Yes,Stable,2,Senior,Medium
+275,55,Female,Cancer,Surgery and Chemotherapy,25000.0,28,No,Recovered,4,Middle Age,High
+276,68,Male,Hypertension,Medication and Counseling,1000.0,20,No,Stable,4,Senior,Low
+277,45,Female,Appendicitis,Appendectomy,8000.0,22,No,Recovered,3,Adult,Medium
+278,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,24,No,Recovered,4,Adult,Low
+279,78,Female,Heart Attack,Cardiac Catheterization,18000.0,26,Yes,Stable,2,Senior,High
+280,25,Male,Allergic Reaction,Epinephrine Injection,100.0,19,No,Recovered,5,Young Adult,Low
+281,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,20,No,Stable,4,Middle Age,Low
+282,58,Male,Prostate Cancer,Radiation Therapy,20000.0,27,No,Recovered,3,Middle Age,High
+283,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,21,No,Recovered,4,Young Adult,Medium
+284,55,Male,Kidney Stones,Lithotripsy,6000.0,22,No,Recovered,3,Middle Age,Medium
+285,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,23,No,Stable,4,Middle Age,Low
+286,55,Female,Heart Disease,Angioplasty,15000.0,24,Yes,Recovered,3,Middle Age,Medium
+287,62,Male,Diabetes,Insulin Therapy,2000.0,22,No,Stable,4,Middle Age,Low
+288,35,Female,Fractured Arm,X-Ray and Splint,500.0,20,Yes,Recovered,5,Young Adult,Low
+289,78,Male,Stroke,CT Scan and Medication,10000.0,26,No,Stable,2,Senior,Medium
+290,53,Female,Cancer,Surgery and Chemotherapy,25000.0,29,Yes,Recovered,4,Middle Age,High
+291,72,Male,Hypertension,Medication and Counseling,1000.0,21,No,Stable,4,Senior,Low
+292,60,Female,Appendicitis,Appendectomy,8000.0,23,Yes,Recovered,3,Middle Age,Medium
+293,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,25,No,Recovered,4,Adult,Low
+294,75,Female,Heart Attack,Cardiac Catheterization,18000.0,27,Yes,Stable,2,Senior,High
+296,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,21,No,Stable,4,Middle Age,Low
+297,67,Male,Prostate Cancer,Radiation Therapy,20000.0,28,No,Recovered,3,Senior,High
+298,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,22,No,Recovered,4,Young Adult,Medium
+299,50,Male,Kidney Stones,Lithotripsy,6000.0,23,No,Recovered,3,Adult,Medium
+300,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,24,No,Stable,4,Middle Age,Low
+301,48,Female,Heart Disease,Angioplasty,15000.0,25,Yes,Recovered,4,Adult,Medium
+302,65,Male,Diabetes,Insulin Therapy,2000.0,23,No,Stable,3,Middle Age,Low
+303,30,Female,Fractured Arm,X-Ray and Splint,500.0,21,No,Recovered,5,Young Adult,Low
+304,70,Male,Stroke,CT Scan and Medication,10000.0,27,Yes,Stable,2,Senior,Medium
+305,55,Female,Cancer,Surgery and Chemotherapy,25000.0,30,No,Recovered,4,Middle Age,High
+306,68,Male,Hypertension,Medication and Counseling,1000.0,22,No,Stable,4,Senior,Low
+307,45,Female,Appendicitis,Appendectomy,8000.0,24,No,Recovered,3,Adult,Medium
+308,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,26,No,Recovered,4,Adult,Low
+309,78,Female,Heart Attack,Cardiac Catheterization,18000.0,28,Yes,Stable,2,Senior,High
+310,25,Male,Allergic Reaction,Epinephrine Injection,100.0,21,No,Recovered,5,Young Adult,Low
+311,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,22,No,Stable,4,Middle Age,Low
+312,58,Male,Prostate Cancer,Radiation Therapy,20000.0,29,No,Recovered,3,Middle Age,High
+313,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,23,No,Recovered,4,Young Adult,Medium
+314,55,Male,Kidney Stones,Lithotripsy,6000.0,24,No,Recovered,3,Middle Age,Medium
+315,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,25,No,Stable,4,Middle Age,Low
+316,55,Female,Heart Disease,Angioplasty,15000.0,26,Yes,Recovered,3,Middle Age,Medium
+317,62,Male,Diabetes,Insulin Therapy,2000.0,24,No,Stable,4,Middle Age,Low
+318,35,Female,Fractured Arm,X-Ray and Splint,500.0,22,Yes,Recovered,5,Young Adult,Low
+319,78,Male,Stroke,CT Scan and Medication,10000.0,28,No,Stable,2,Senior,Medium
+320,53,Female,Cancer,Surgery and Chemotherapy,25000.0,31,Yes,Recovered,4,Middle Age,High
+321,72,Male,Hypertension,Medication and Counseling,1000.0,23,No,Stable,4,Senior,Low
+322,60,Female,Appendicitis,Appendectomy,8000.0,25,Yes,Recovered,3,Middle Age,Medium
+323,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,27,No,Recovered,4,Adult,Low
+324,75,Female,Heart Attack,Cardiac Catheterization,18000.0,29,Yes,Stable,2,Senior,High
+325,28,Male,Allergic Reaction,Epinephrine Injection,100.0,22,No,Recovered,5,Young Adult,Low
+326,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,23,No,Stable,4,Middle Age,Low
+327,67,Male,Prostate Cancer,Radiation Therapy,20000.0,30,No,Recovered,3,Senior,High
+328,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,24,No,Recovered,4,Young Adult,Medium
+329,50,Male,Kidney Stones,Lithotripsy,6000.0,25,No,Recovered,3,Adult,Medium
+330,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,26,No,Stable,4,Middle Age,Low
+331,48,Female,Heart Disease,Angioplasty,15000.0,27,Yes,Recovered,4,Adult,Medium
+332,65,Male,Diabetes,Insulin Therapy,2000.0,25,No,Stable,3,Middle Age,Low
+333,30,Female,Fractured Arm,X-Ray and Splint,500.0,23,No,Recovered,5,Young Adult,Low
+334,70,Male,Stroke,CT Scan and Medication,10000.0,29,Yes,Stable,2,Senior,Medium
+335,55,Female,Cancer,Surgery and Chemotherapy,25000.0,32,No,Recovered,4,Middle Age,High
+336,68,Male,Hypertension,Medication and Counseling,1000.0,24,No,Stable,4,Senior,Low
+337,45,Female,Appendicitis,Appendectomy,8000.0,26,No,Recovered,3,Adult,Medium
+338,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,28,No,Recovered,4,Adult,Low
+339,78,Female,Heart Attack,Cardiac Catheterization,18000.0,30,Yes,Stable,2,Senior,High
+340,25,Male,Allergic Reaction,Epinephrine Injection,100.0,23,No,Recovered,5,Young Adult,Low
+341,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,24,No,Stable,4,Middle Age,Low
+342,58,Male,Prostate Cancer,Radiation Therapy,20000.0,31,No,Recovered,3,Middle Age,High
+343,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,25,No,Recovered,4,Young Adult,Medium
+344,55,Male,Kidney Stones,Lithotripsy,6000.0,26,No,Recovered,3,Middle Age,Medium
+345,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,27,No,Stable,4,Middle Age,Low
+346,55,Female,Heart Disease,Angioplasty,15000.0,28,Yes,Recovered,3,Middle Age,Medium
+347,62,Male,Diabetes,Insulin Therapy,2000.0,26,No,Stable,4,Middle Age,Low
+348,35,Female,Fractured Arm,X-Ray and Splint,500.0,24,Yes,Recovered,5,Young Adult,Low
+349,78,Male,Stroke,CT Scan and Medication,10000.0,30,No,Stable,2,Senior,Medium
+350,53,Female,Cancer,Surgery and Chemotherapy,25000.0,33,Yes,Recovered,4,Middle Age,High
+351,72,Male,Hypertension,Medication and Counseling,1000.0,25,No,Stable,4,Senior,Low
+352,60,Female,Appendicitis,Appendectomy,8000.0,27,Yes,Recovered,3,Middle Age,Medium
+353,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,29,No,Recovered,4,Adult,Low
+354,75,Female,Heart Attack,Cardiac Catheterization,18000.0,31,Yes,Stable,2,Senior,High
+355,28,Male,Allergic Reaction,Epinephrine Injection,100.0,24,No,Recovered,5,Young Adult,Low
+357,67,Male,Prostate Cancer,Radiation Therapy,20000.0,32,No,Recovered,3,Senior,High
+358,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,26,No,Recovered,4,Young Adult,Medium
+359,50,Male,Kidney Stones,Lithotripsy,6000.0,27,No,Recovered,3,Adult,Medium
+360,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,28,No,Stable,4,Middle Age,Low
+361,48,Female,Heart Disease,Angioplasty,15000.0,29,Yes,Recovered,4,Adult,Medium
+362,65,Male,Diabetes,Insulin Therapy,2000.0,27,No,Stable,3,Middle Age,Low
+363,30,Female,Fractured Arm,X-Ray and Splint,500.0,25,No,Recovered,5,Young Adult,Low
+364,70,Male,Stroke,CT Scan and Medication,10000.0,31,Yes,Stable,2,Senior,Medium
+365,55,Female,Cancer,Surgery and Chemotherapy,25000.0,34,No,Recovered,4,Middle Age,High
+366,68,Male,Hypertension,Medication and Counseling,1000.0,26,No,Stable,4,Senior,Low
+367,45,Female,Appendicitis,Appendectomy,8000.0,28,No,Recovered,3,Adult,Medium
+368,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,30,No,Recovered,4,Adult,Low
+369,78,Female,Heart Attack,Cardiac Catheterization,18000.0,32,Yes,Stable,2,Senior,High
+370,25,Male,Allergic Reaction,Epinephrine Injection,100.0,25,No,Recovered,5,Young Adult,Low
+371,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,26,No,Stable,4,Middle Age,Low
+372,58,Male,Prostate Cancer,Radiation Therapy,20000.0,33,No,Recovered,3,Middle Age,High
+373,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,27,No,Recovered,4,Young Adult,Medium
+374,55,Male,Kidney Stones,Lithotripsy,6000.0,28,No,Recovered,3,Middle Age,Medium
+375,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,29,No,Stable,4,Middle Age,Low
+376,55,Female,Heart Disease,Angioplasty,15000.0,30,Yes,Recovered,3,Middle Age,Medium
+377,62,Male,Diabetes,Insulin Therapy,2000.0,28,No,Stable,4,Middle Age,Low
+378,35,Female,Fractured Arm,X-Ray and Splint,500.0,26,Yes,Recovered,5,Young Adult,Low
+379,78,Male,Stroke,CT Scan and Medication,10000.0,33,No,Stable,2,Senior,Medium
+380,53,Female,Cancer,Surgery and Chemotherapy,25000.0,35,Yes,Recovered,4,Middle Age,High
+381,72,Male,Hypertension,Medication and Counseling,1000.0,27,No,Stable,4,Senior,Low
+382,60,Female,Appendicitis,Appendectomy,8000.0,29,Yes,Recovered,3,Middle Age,Medium
+383,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,31,No,Recovered,4,Adult,Low
+384,75,Female,Heart Attack,Cardiac Catheterization,18000.0,33,Yes,Stable,2,Senior,High
+385,28,Male,Allergic Reaction,Epinephrine Injection,100.0,26,No,Recovered,5,Young Adult,Low
+386,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,27,No,Stable,4,Middle Age,Low
+387,67,Male,Prostate Cancer,Radiation Therapy,20000.0,34,No,Recovered,3,Senior,High
+388,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,28,No,Recovered,4,Young Adult,Medium
+389,50,Male,Kidney Stones,Lithotripsy,6000.0,29,No,Recovered,3,Adult,Medium
+390,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,30,No,Stable,4,Middle Age,Low
+391,48,Female,Heart Disease,Angioplasty,15000.0,31,Yes,Recovered,4,Adult,Medium
+392,65,Male,Diabetes,Insulin Therapy,2000.0,29,No,Stable,3,Middle Age,Low
+393,30,Female,Fractured Arm,X-Ray and Splint,500.0,27,No,Recovered,5,Young Adult,Low
+394,70,Male,Stroke,CT Scan and Medication,10000.0,34,Yes,Stable,2,Senior,Medium
+395,55,Female,Cancer,Surgery and Chemotherapy,25000.0,36,No,Recovered,4,Middle Age,High
+396,68,Male,Hypertension,Medication and Counseling,1000.0,28,No,Stable,4,Senior,Low
+397,45,Female,Appendicitis,Appendectomy,8000.0,30,No,Recovered,3,Adult,Medium
+398,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,32,No,Recovered,4,Adult,Low
+399,78,Female,Heart Attack,Cardiac Catheterization,18000.0,34,Yes,Stable,2,Senior,High
+400,25,Male,Allergic Reaction,Epinephrine Injection,100.0,27,No,Recovered,5,Young Adult,Low
+401,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,28,No,Stable,4,Middle Age,Low
+402,58,Male,Prostate Cancer,Radiation Therapy,20000.0,35,No,Recovered,3,Middle Age,High
+403,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,29,No,Recovered,4,Young Adult,Medium
+404,55,Male,Kidney Stones,Lithotripsy,6000.0,30,No,Recovered,3,Middle Age,Medium
+405,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,31,No,Stable,4,Middle Age,Low
+406,55,Female,Heart Disease,Angioplasty,15000.0,32,Yes,Recovered,3,Middle Age,Medium
+407,62,Male,Diabetes,Insulin Therapy,2000.0,30,No,Stable,4,Middle Age,Low
+408,35,Female,Fractured Arm,X-Ray and Splint,500.0,28,Yes,Recovered,5,Young Adult,Low
+409,78,Male,Stroke,CT Scan and Medication,10000.0,35,No,Stable,2,Senior,Medium
+410,53,Female,Cancer,Surgery and Chemotherapy,25000.0,37,Yes,Recovered,4,Middle Age,High
+411,72,Male,Hypertension,Medication and Counseling,1000.0,29,No,Stable,4,Senior,Low
+412,60,Female,Appendicitis,Appendectomy,8000.0,31,Yes,Recovered,3,Middle Age,Medium
+413,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,33,No,Recovered,4,Adult,Low
+414,75,Female,Heart Attack,Cardiac Catheterization,18000.0,35,Yes,Stable,2,Senior,High
+415,28,Male,Allergic Reaction,Epinephrine Injection,100.0,28,No,Recovered,5,Young Adult,Low
+416,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,29,No,Stable,4,Middle Age,Low
+418,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,30,No,Recovered,4,Young Adult,Medium
+419,50,Male,Kidney Stones,Lithotripsy,6000.0,31,No,Recovered,3,Adult,Medium
+420,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,32,No,Stable,4,Middle Age,Low
+421,48,Female,Heart Disease,Angioplasty,15000.0,33,Yes,Recovered,4,Adult,Medium
+422,65,Male,Diabetes,Insulin Therapy,2000.0,31,No,Stable,3,Middle Age,Low
+423,30,Female,Fractured Arm,X-Ray and Splint,500.0,29,No,Recovered,5,Young Adult,Low
+424,70,Male,Stroke,CT Scan and Medication,10000.0,36,Yes,Stable,2,Senior,Medium
+425,55,Female,Cancer,Surgery and Chemotherapy,25000.0,38,No,Recovered,4,Middle Age,High
+426,68,Male,Hypertension,Medication and Counseling,1000.0,30,No,Stable,4,Senior,Low
+427,45,Female,Appendicitis,Appendectomy,8000.0,32,No,Recovered,3,Adult,Medium
+428,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,34,No,Recovered,4,Adult,Low
+429,78,Female,Heart Attack,Cardiac Catheterization,18000.0,36,Yes,Stable,2,Senior,High
+430,25,Male,Allergic Reaction,Epinephrine Injection,100.0,29,No,Recovered,5,Young Adult,Low
+431,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,30,No,Stable,4,Middle Age,Low
+432,58,Male,Prostate Cancer,Radiation Therapy,20000.0,37,No,Recovered,3,Middle Age,High
+433,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,31,No,Recovered,4,Young Adult,Medium
+434,55,Male,Kidney Stones,Lithotripsy,6000.0,32,No,Recovered,3,Middle Age,Medium
+435,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,33,No,Stable,4,Middle Age,Low
+436,55,Female,Heart Disease,Angioplasty,15000.0,34,Yes,Recovered,3,Middle Age,Medium
+437,62,Male,Diabetes,Insulin Therapy,2000.0,32,No,Stable,4,Middle Age,Low
+438,35,Female,Fractured Arm,X-Ray and Splint,500.0,30,Yes,Recovered,5,Young Adult,Low
+439,78,Male,Stroke,CT Scan and Medication,10000.0,37,No,Stable,2,Senior,Medium
+440,53,Female,Cancer,Surgery and Chemotherapy,25000.0,39,Yes,Recovered,4,Middle Age,High
+441,72,Male,Hypertension,Medication and Counseling,1000.0,31,No,Stable,4,Senior,Low
+442,60,Female,Appendicitis,Appendectomy,8000.0,33,Yes,Recovered,3,Middle Age,Medium
+443,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,35,No,Recovered,4,Adult,Low
+444,75,Female,Heart Attack,Cardiac Catheterization,18000.0,37,Yes,Stable,2,Senior,High
+445,28,Male,Allergic Reaction,Epinephrine Injection,100.0,30,No,Recovered,5,Young Adult,Low
+446,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,31,No,Stable,4,Middle Age,Low
+447,67,Male,Prostate Cancer,Radiation Therapy,20000.0,38,No,Recovered,3,Senior,High
+448,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,32,No,Recovered,4,Young Adult,Medium
+449,50,Male,Kidney Stones,Lithotripsy,6000.0,33,No,Recovered,3,Adult,Medium
+450,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,34,No,Stable,4,Middle Age,Low
+451,48,Female,Heart Disease,Angioplasty,15000.0,35,Yes,Recovered,4,Adult,Medium
+452,65,Male,Diabetes,Insulin Therapy,2000.0,33,No,Stable,3,Middle Age,Low
+453,30,Female,Fractured Arm,X-Ray and Splint,500.0,31,No,Recovered,5,Young Adult,Low
+454,70,Male,Stroke,CT Scan and Medication,10000.0,38,Yes,Stable,2,Senior,Medium
+455,55,Female,Cancer,Surgery and Chemotherapy,25000.0,40,No,Recovered,4,Middle Age,High
+456,68,Male,Hypertension,Medication and Counseling,1000.0,32,No,Stable,4,Senior,Low
+457,45,Female,Appendicitis,Appendectomy,8000.0,34,No,Recovered,3,Adult,Medium
+458,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,36,No,Recovered,4,Adult,Low
+459,78,Female,Heart Attack,Cardiac Catheterization,18000.0,38,Yes,Stable,2,Senior,High
+460,25,Male,Allergic Reaction,Epinephrine Injection,100.0,31,No,Recovered,5,Young Adult,Low
+461,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,32,No,Stable,4,Middle Age,Low
+462,58,Male,Prostate Cancer,Radiation Therapy,20000.0,39,No,Recovered,3,Middle Age,High
+463,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,33,No,Recovered,4,Young Adult,Medium
+464,55,Male,Kidney Stones,Lithotripsy,6000.0,34,No,Recovered,3,Middle Age,Medium
+465,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,35,No,Stable,4,Middle Age,Low
+466,55,Female,Heart Disease,Angioplasty,15000.0,36,Yes,Recovered,3,Middle Age,Medium
+467,62,Male,Diabetes,Insulin Therapy,2000.0,34,No,Stable,4,Middle Age,Low
+468,35,Female,Fractured Arm,X-Ray and Splint,500.0,32,Yes,Recovered,5,Young Adult,Low
+469,78,Male,Stroke,CT Scan and Medication,10000.0,39,No,Stable,2,Senior,Medium
+470,53,Female,Cancer,Surgery and Chemotherapy,25000.0,41,Yes,Recovered,4,Middle Age,High
+471,72,Male,Hypertension,Medication and Counseling,1000.0,33,No,Stable,4,Senior,Low
+472,60,Female,Appendicitis,Appendectomy,8000.0,35,Yes,Recovered,3,Middle Age,Medium
+473,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,37,No,Recovered,4,Adult,Low
+474,75,Female,Heart Attack,Cardiac Catheterization,18000.0,39,Yes,Stable,2,Senior,High
+475,28,Male,Allergic Reaction,Epinephrine Injection,100.0,32,No,Recovered,5,Young Adult,Low
+476,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,33,No,Stable,4,Middle Age,Low
+477,67,Male,Prostate Cancer,Radiation Therapy,20000.0,40,No,Recovered,3,Senior,High
+479,50,Male,Kidney Stones,Lithotripsy,6000.0,35,No,Recovered,3,Adult,Medium
+480,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,36,No,Stable,4,Middle Age,Low
+481,48,Female,Heart Disease,Angioplasty,15000.0,37,Yes,Recovered,4,Adult,Medium
+482,65,Male,Diabetes,Insulin Therapy,2000.0,35,No,Stable,3,Middle Age,Low
+483,30,Female,Fractured Arm,X-Ray and Splint,500.0,33,No,Recovered,5,Young Adult,Low
+484,70,Male,Stroke,CT Scan and Medication,10000.0,40,Yes,Stable,2,Senior,Medium
+485,55,Female,Cancer,Surgery and Chemotherapy,25000.0,42,No,Recovered,4,Middle Age,High
+486,68,Male,Hypertension,Medication and Counseling,1000.0,34,No,Stable,4,Senior,Low
+487,45,Female,Appendicitis,Appendectomy,8000.0,36,No,Recovered,3,Adult,Medium
+488,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,38,No,Recovered,4,Adult,Low
+489,78,Female,Heart Attack,Cardiac Catheterization,18000.0,40,Yes,Stable,2,Senior,High
+490,25,Male,Allergic Reaction,Epinephrine Injection,100.0,33,No,Recovered,5,Young Adult,Low
+491,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,34,No,Stable,4,Middle Age,Low
+492,58,Male,Prostate Cancer,Radiation Therapy,20000.0,41,No,Recovered,3,Middle Age,High
+493,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,35,No,Recovered,4,Young Adult,Medium
+494,55,Male,Kidney Stones,Lithotripsy,6000.0,36,No,Recovered,3,Middle Age,Medium
+495,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,37,No,Stable,4,Middle Age,Low
+496,55,Female,Heart Disease,Angioplasty,15000.0,38,Yes,Recovered,3,Middle Age,Medium
+497,62,Male,Diabetes,Insulin Therapy,2000.0,36,No,Stable,4,Middle Age,Low
+498,35,Female,Fractured Arm,X-Ray and Splint,500.0,34,Yes,Recovered,5,Young Adult,Low
+499,78,Male,Stroke,CT Scan and Medication,10000.0,41,No,Stable,2,Senior,Medium
+500,53,Female,Cancer,Surgery and Chemotherapy,25000.0,43,Yes,Recovered,4,Middle Age,High
+501,72,Male,Hypertension,Medication and Counseling,1000.0,35,No,Stable,4,Senior,Low
+502,60,Female,Appendicitis,Appendectomy,8000.0,37,Yes,Recovered,3,Middle Age,Medium
+503,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,39,No,Recovered,4,Adult,Low
+504,75,Female,Heart Attack,Cardiac Catheterization,18000.0,41,Yes,Stable,2,Senior,High
+505,28,Male,Allergic Reaction,Epinephrine Injection,100.0,34,No,Recovered,5,Young Adult,Low
+506,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,35,No,Stable,4,Middle Age,Low
+507,67,Male,Prostate Cancer,Radiation Therapy,20000.0,42,No,Recovered,3,Senior,High
+508,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,36,No,Recovered,4,Young Adult,Medium
+509,50,Male,Kidney Stones,Lithotripsy,6000.0,37,No,Recovered,3,Adult,Medium
+510,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,38,No,Stable,4,Middle Age,Low
+511,48,Female,Heart Disease,Angioplasty,15000.0,39,Yes,Recovered,4,Adult,Medium
+512,65,Male,Diabetes,Insulin Therapy,2000.0,37,No,Stable,3,Middle Age,Low
+513,30,Female,Fractured Arm,X-Ray and Splint,500.0,35,No,Recovered,5,Young Adult,Low
+514,70,Male,Stroke,CT Scan and Medication,10000.0,42,Yes,Stable,2,Senior,Medium
+515,55,Female,Cancer,Surgery and Chemotherapy,25000.0,44,No,Recovered,4,Middle Age,High
+516,68,Male,Hypertension,Medication and Counseling,1000.0,36,No,Stable,4,Senior,Low
+517,45,Female,Appendicitis,Appendectomy,8000.0,38,No,Recovered,3,Adult,Medium
+518,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,40,No,Recovered,4,Adult,Low
+519,78,Female,Heart Attack,Cardiac Catheterization,18000.0,42,Yes,Stable,2,Senior,High
+520,25,Male,Allergic Reaction,Epinephrine Injection,100.0,35,No,Recovered,5,Young Adult,Low
+521,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,36,No,Stable,4,Middle Age,Low
+522,58,Male,Prostate Cancer,Radiation Therapy,20000.0,43,No,Recovered,3,Middle Age,High
+523,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,37,No,Recovered,4,Young Adult,Medium
+524,55,Male,Kidney Stones,Lithotripsy,6000.0,38,No,Recovered,3,Middle Age,Medium
+525,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,39,No,Stable,4,Middle Age,Low
+526,55,Female,Heart Disease,Angioplasty,15000.0,40,Yes,Recovered,3,Middle Age,Medium
+527,62,Male,Diabetes,Insulin Therapy,2000.0,38,No,Stable,4,Middle Age,Low
+528,35,Female,Fractured Arm,X-Ray and Splint,500.0,36,Yes,Recovered,5,Young Adult,Low
+529,78,Male,Stroke,CT Scan and Medication,10000.0,43,No,Stable,2,Senior,Medium
+530,53,Female,Cancer,Surgery and Chemotherapy,25000.0,45,Yes,Recovered,4,Middle Age,High
+531,72,Male,Hypertension,Medication and Counseling,1000.0,38,No,Stable,4,Senior,Low
+532,60,Female,Appendicitis,Appendectomy,8000.0,39,Yes,Recovered,3,Middle Age,Medium
+533,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,41,No,Recovered,4,Adult,Low
+534,75,Female,Heart Attack,Cardiac Catheterization,18000.0,43,Yes,Stable,2,Senior,High
+535,28,Male,Allergic Reaction,Epinephrine Injection,100.0,36,No,Recovered,5,Young Adult,Low
+536,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,37,No,Stable,4,Middle Age,Low
+537,67,Male,Prostate Cancer,Radiation Therapy,20000.0,44,No,Recovered,3,Senior,High
+538,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,38,No,Recovered,4,Young Adult,Medium
+540,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,40,No,Stable,4,Middle Age,Low
+541,48,Female,Heart Disease,Angioplasty,15000.0,41,Yes,Recovered,4,Adult,Medium
+542,65,Male,Diabetes,Insulin Therapy,2000.0,39,No,Stable,3,Middle Age,Low
+543,30,Female,Fractured Arm,X-Ray and Splint,500.0,37,No,Recovered,5,Young Adult,Low
+544,70,Male,Stroke,CT Scan and Medication,10000.0,44,Yes,Stable,2,Senior,Medium
+545,55,Female,Cancer,Surgery and Chemotherapy,25000.0,46,No,Recovered,4,Middle Age,High
+546,68,Male,Hypertension,Medication and Counseling,1000.0,40,No,Stable,4,Senior,Low
+547,45,Female,Appendicitis,Appendectomy,8000.0,42,No,Recovered,3,Adult,Medium
+548,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,42,No,Recovered,4,Adult,Low
+549,78,Female,Heart Attack,Cardiac Catheterization,18000.0,44,Yes,Stable,2,Senior,High
+550,25,Male,Allergic Reaction,Epinephrine Injection,100.0,37,No,Recovered,5,Young Adult,Low
+551,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,38,No,Stable,4,Middle Age,Low
+552,58,Male,Prostate Cancer,Radiation Therapy,20000.0,45,No,Recovered,3,Middle Age,High
+553,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,39,No,Recovered,4,Young Adult,Medium
+554,55,Male,Kidney Stones,Lithotripsy,6000.0,40,No,Recovered,3,Middle Age,Medium
+555,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,41,No,Stable,4,Middle Age,Low
+556,55,Female,Heart Disease,Angioplasty,15000.0,42,Yes,Recovered,3,Middle Age,Medium
+557,62,Male,Diabetes,Insulin Therapy,2000.0,40,No,Stable,4,Middle Age,Low
+558,35,Female,Fractured Arm,X-Ray and Splint,500.0,38,Yes,Recovered,5,Young Adult,Low
+559,78,Male,Stroke,CT Scan and Medication,10000.0,45,No,Stable,2,Senior,Medium
+560,53,Female,Cancer,Surgery and Chemotherapy,25000.0,47,Yes,Recovered,4,Middle Age,High
+561,72,Male,Hypertension,Medication and Counseling,1000.0,41,No,Stable,4,Senior,Low
+562,60,Female,Appendicitis,Appendectomy,8000.0,43,Yes,Recovered,3,Middle Age,Medium
+563,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,43,No,Recovered,4,Adult,Low
+564,75,Female,Heart Attack,Cardiac Catheterization,18000.0,45,Yes,Stable,2,Senior,High
+565,28,Male,Allergic Reaction,Epinephrine Injection,100.0,38,No,Recovered,5,Young Adult,Low
+566,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,39,No,Stable,4,Middle Age,Low
+567,67,Male,Prostate Cancer,Radiation Therapy,20000.0,46,No,Recovered,3,Senior,High
+568,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,40,No,Recovered,4,Young Adult,Medium
+569,50,Male,Kidney Stones,Lithotripsy,6000.0,41,No,Recovered,3,Adult,Medium
+570,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,42,No,Stable,4,Middle Age,Low
+571,48,Female,Heart Disease,Angioplasty,15000.0,43,Yes,Recovered,4,Adult,Medium
+572,65,Male,Diabetes,Insulin Therapy,2000.0,41,No,Stable,3,Middle Age,Low
+573,30,Female,Fractured Arm,X-Ray and Splint,500.0,39,No,Recovered,5,Young Adult,Low
+574,70,Male,Stroke,CT Scan and Medication,10000.0,46,Yes,Stable,2,Senior,Medium
+575,55,Female,Cancer,Surgery and Chemotherapy,25000.0,48,No,Recovered,4,Middle Age,High
+576,68,Male,Hypertension,Medication and Counseling,1000.0,42,No,Stable,4,Senior,Low
+577,45,Female,Appendicitis,Appendectomy,8000.0,44,No,Recovered,3,Adult,Medium
+578,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,44,No,Recovered,4,Adult,Low
+579,78,Female,Heart Attack,Cardiac Catheterization,18000.0,46,Yes,Stable,2,Senior,High
+580,25,Male,Allergic Reaction,Epinephrine Injection,100.0,39,No,Recovered,5,Young Adult,Low
+581,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,40,No,Stable,4,Middle Age,Low
+582,58,Male,Prostate Cancer,Radiation Therapy,20000.0,47,No,Recovered,3,Middle Age,High
+583,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,41,No,Recovered,4,Young Adult,Medium
+584,55,Male,Kidney Stones,Lithotripsy,6000.0,42,No,Recovered,3,Middle Age,Medium
+585,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,43,No,Stable,4,Middle Age,Low
+586,55,Female,Heart Disease,Angioplasty,15000.0,44,Yes,Recovered,3,Middle Age,Medium
+587,62,Male,Diabetes,Insulin Therapy,2000.0,42,No,Stable,4,Middle Age,Low
+588,35,Female,Fractured Arm,X-Ray and Splint,500.0,40,Yes,Recovered,5,Young Adult,Low
+589,78,Male,Stroke,CT Scan and Medication,10000.0,47,No,Stable,2,Senior,Medium
+590,53,Female,Cancer,Surgery and Chemotherapy,25000.0,49,Yes,Recovered,4,Middle Age,High
+591,72,Male,Hypertension,Medication and Counseling,1000.0,43,No,Stable,4,Senior,Low
+592,60,Female,Appendicitis,Appendectomy,8000.0,45,Yes,Recovered,3,Middle Age,Medium
+593,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,45,No,Recovered,4,Adult,Low
+594,75,Female,Heart Attack,Cardiac Catheterization,18000.0,47,Yes,Stable,2,Senior,High
+595,28,Male,Allergic Reaction,Epinephrine Injection,100.0,40,No,Recovered,5,Young Adult,Low
+596,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,41,No,Stable,4,Middle Age,Low
+597,67,Male,Prostate Cancer,Radiation Therapy,20000.0,48,No,Recovered,3,Senior,High
+598,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,42,No,Recovered,4,Young Adult,Medium
+599,50,Male,Kidney Stones,Lithotripsy,6000.0,43,No,Recovered,3,Adult,Medium
+601,48,Female,Heart Disease,Angioplasty,15000.0,45,Yes,Recovered,4,Adult,Medium
+602,65,Male,Diabetes,Insulin Therapy,2000.0,43,No,Stable,3,Middle Age,Low
+603,30,Female,Fractured Arm,X-Ray and Splint,500.0,41,No,Recovered,5,Young Adult,Low
+604,70,Male,Stroke,CT Scan and Medication,10000.0,48,Yes,Stable,2,Senior,Medium
+605,55,Female,Cancer,Surgery and Chemotherapy,25000.0,50,No,Recovered,4,Middle Age,High
+606,68,Male,Hypertension,Medication and Counseling,1000.0,44,No,Stable,4,Senior,Low
+607,45,Female,Appendicitis,Appendectomy,8000.0,46,No,Recovered,3,Adult,Medium
+608,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,46,No,Recovered,4,Adult,Low
+609,78,Female,Heart Attack,Cardiac Catheterization,18000.0,48,Yes,Stable,2,Senior,High
+610,25,Male,Allergic Reaction,Epinephrine Injection,100.0,41,No,Recovered,5,Young Adult,Low
+611,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,42,No,Stable,4,Middle Age,Low
+612,58,Male,Prostate Cancer,Radiation Therapy,20000.0,49,No,Recovered,3,Middle Age,High
+613,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,43,No,Recovered,4,Young Adult,Medium
+614,55,Male,Kidney Stones,Lithotripsy,6000.0,44,No,Recovered,3,Middle Age,Medium
+615,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,45,No,Stable,4,Middle Age,Low
+616,55,Female,Heart Disease,Angioplasty,15000.0,46,Yes,Recovered,3,Middle Age,Medium
+617,62,Male,Diabetes,Insulin Therapy,2000.0,44,No,Stable,4,Middle Age,Low
+618,35,Female,Fractured Arm,X-Ray and Splint,500.0,42,Yes,Recovered,5,Young Adult,Low
+619,78,Male,Stroke,CT Scan and Medication,10000.0,49,No,Stable,2,Senior,Medium
+620,53,Female,Cancer,Surgery and Chemotherapy,25000.0,51,Yes,Recovered,4,Middle Age,High
+621,72,Male,Hypertension,Medication and Counseling,1000.0,45,No,Stable,4,Senior,Low
+622,60,Female,Appendicitis,Appendectomy,8000.0,47,Yes,Recovered,3,Middle Age,Medium
+623,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,47,No,Recovered,4,Adult,Low
+624,75,Female,Heart Attack,Cardiac Catheterization,18000.0,49,Yes,Stable,2,Senior,High
+625,28,Male,Allergic Reaction,Epinephrine Injection,100.0,42,No,Recovered,5,Young Adult,Low
+626,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,43,No,Stable,4,Middle Age,Low
+627,67,Male,Prostate Cancer,Radiation Therapy,20000.0,50,No,Recovered,3,Senior,High
+628,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,44,No,Recovered,4,Young Adult,Medium
+629,50,Male,Kidney Stones,Lithotripsy,6000.0,45,No,Recovered,3,Adult,Medium
+630,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,46,No,Stable,4,Middle Age,Low
+631,48,Female,Heart Disease,Angioplasty,15000.0,47,Yes,Recovered,4,Adult,Medium
+632,65,Male,Diabetes,Insulin Therapy,2000.0,45,No,Stable,3,Middle Age,Low
+633,30,Female,Fractured Arm,X-Ray and Splint,500.0,43,No,Recovered,5,Young Adult,Low
+634,70,Male,Stroke,CT Scan and Medication,10000.0,50,Yes,Stable,2,Senior,Medium
+635,55,Female,Cancer,Surgery and Chemotherapy,25000.0,52,No,Recovered,4,Middle Age,High
+636,68,Male,Hypertension,Medication and Counseling,1000.0,46,No,Stable,4,Senior,Low
+637,45,Female,Appendicitis,Appendectomy,8000.0,48,No,Recovered,3,Adult,Medium
+638,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,48,No,Recovered,4,Adult,Low
+639,78,Female,Heart Attack,Cardiac Catheterization,18000.0,50,Yes,Stable,2,Senior,High
+640,25,Male,Allergic Reaction,Epinephrine Injection,100.0,43,No,Recovered,5,Young Adult,Low
+641,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,44,No,Stable,4,Middle Age,Low
+642,58,Male,Prostate Cancer,Radiation Therapy,20000.0,51,No,Recovered,3,Middle Age,High
+643,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,45,No,Recovered,4,Young Adult,Medium
+644,55,Male,Kidney Stones,Lithotripsy,6000.0,46,No,Recovered,3,Middle Age,Medium
+645,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,47,No,Stable,4,Middle Age,Low
+646,55,Female,Heart Disease,Angioplasty,15000.0,48,Yes,Recovered,3,Middle Age,Medium
+647,62,Male,Diabetes,Insulin Therapy,2000.0,46,No,Stable,4,Middle Age,Low
+648,35,Female,Fractured Arm,X-Ray and Splint,500.0,44,Yes,Recovered,5,Young Adult,Low
+649,78,Male,Stroke,CT Scan and Medication,10000.0,51,No,Stable,2,Senior,Medium
+650,53,Female,Cancer,Surgery and Chemotherapy,25000.0,53,Yes,Recovered,4,Middle Age,High
+651,72,Male,Hypertension,Medication and Counseling,1000.0,47,No,Stable,4,Senior,Low
+652,60,Female,Appendicitis,Appendectomy,8000.0,49,Yes,Recovered,3,Middle Age,Medium
+653,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,49,No,Recovered,4,Adult,Low
+654,75,Female,Heart Attack,Cardiac Catheterization,18000.0,51,Yes,Stable,2,Senior,High
+655,28,Male,Allergic Reaction,Epinephrine Injection,100.0,44,No,Recovered,5,Young Adult,Low
+656,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,45,No,Stable,4,Middle Age,Low
+657,67,Male,Prostate Cancer,Radiation Therapy,20000.0,52,No,Recovered,3,Senior,High
+658,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,46,No,Recovered,4,Young Adult,Medium
+659,50,Male,Kidney Stones,Lithotripsy,6000.0,47,No,Recovered,3,Adult,Medium
+660,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,48,No,Stable,4,Middle Age,Low
+662,65,Male,Diabetes,Insulin Therapy,2000.0,47,No,Stable,3,Middle Age,Low
+663,30,Female,Fractured Arm,X-Ray and Splint,500.0,45,No,Recovered,5,Young Adult,Low
+664,70,Male,Stroke,CT Scan and Medication,10000.0,52,Yes,Stable,2,Senior,Medium
+665,55,Female,Cancer,Surgery and Chemotherapy,25000.0,54,No,Recovered,4,Middle Age,High
+666,68,Male,Hypertension,Medication and Counseling,1000.0,48,No,Stable,4,Senior,Low
+667,45,Female,Appendicitis,Appendectomy,8000.0,50,No,Recovered,3,Adult,Medium
+668,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,50,No,Recovered,4,Adult,Low
+669,78,Female,Heart Attack,Cardiac Catheterization,18000.0,52,Yes,Stable,2,Senior,High
+670,25,Male,Allergic Reaction,Epinephrine Injection,100.0,45,No,Recovered,5,Young Adult,Low
+671,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,46,No,Stable,4,Middle Age,Low
+672,58,Male,Prostate Cancer,Radiation Therapy,20000.0,53,No,Recovered,3,Middle Age,High
+673,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,47,No,Recovered,4,Young Adult,Medium
+674,55,Male,Kidney Stones,Lithotripsy,6000.0,48,No,Recovered,3,Middle Age,Medium
+675,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,49,No,Stable,4,Middle Age,Low
+676,55,Female,Heart Disease,Angioplasty,15000.0,50,Yes,Recovered,3,Middle Age,Medium
+677,62,Male,Diabetes,Insulin Therapy,2000.0,48,No,Stable,4,Middle Age,Low
+678,35,Female,Fractured Arm,X-Ray and Splint,500.0,46,Yes,Recovered,5,Young Adult,Low
+679,78,Male,Stroke,CT Scan and Medication,10000.0,53,No,Stable,2,Senior,Medium
+680,53,Female,Cancer,Surgery and Chemotherapy,25000.0,55,Yes,Recovered,4,Middle Age,High
+681,72,Male,Hypertension,Medication and Counseling,1000.0,49,No,Stable,4,Senior,Low
+682,60,Female,Appendicitis,Appendectomy,8000.0,51,Yes,Recovered,3,Middle Age,Medium
+683,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,51,No,Recovered,4,Adult,Low
+684,75,Female,Heart Attack,Cardiac Catheterization,18000.0,53,Yes,Stable,2,Senior,High
+685,28,Male,Allergic Reaction,Epinephrine Injection,100.0,46,No,Recovered,5,Young Adult,Low
+686,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,47,No,Stable,4,Middle Age,Low
+687,67,Male,Prostate Cancer,Radiation Therapy,20000.0,54,No,Recovered,3,Senior,High
+688,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,48,No,Recovered,4,Young Adult,Medium
+689,50,Male,Kidney Stones,Lithotripsy,6000.0,49,No,Recovered,3,Adult,Medium
+690,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,50,No,Stable,4,Middle Age,Low
+691,48,Female,Heart Disease,Angioplasty,15000.0,51,Yes,Recovered,4,Adult,Medium
+692,65,Male,Diabetes,Insulin Therapy,2000.0,49,No,Stable,3,Middle Age,Low
+693,30,Female,Fractured Arm,X-Ray and Splint,500.0,47,No,Recovered,5,Young Adult,Low
+694,70,Male,Stroke,CT Scan and Medication,10000.0,54,Yes,Stable,2,Senior,Medium
+695,55,Female,Cancer,Surgery and Chemotherapy,25000.0,56,No,Recovered,4,Middle Age,High
+696,68,Male,Hypertension,Medication and Counseling,1000.0,50,No,Stable,4,Senior,Low
+697,45,Female,Appendicitis,Appendectomy,8000.0,52,No,Recovered,3,Adult,Medium
+698,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,52,No,Recovered,4,Adult,Low
+699,78,Female,Heart Attack,Cardiac Catheterization,18000.0,54,Yes,Stable,2,Senior,High
+700,25,Male,Allergic Reaction,Epinephrine Injection,100.0,47,No,Recovered,5,Young Adult,Low
+701,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,48,No,Stable,4,Middle Age,Low
+702,58,Male,Prostate Cancer,Radiation Therapy,20000.0,55,No,Recovered,3,Middle Age,High
+703,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,49,No,Recovered,4,Young Adult,Medium
+704,55,Male,Kidney Stones,Lithotripsy,6000.0,50,No,Recovered,3,Middle Age,Medium
+705,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,51,No,Stable,4,Middle Age,Low
+706,55,Female,Heart Disease,Angioplasty,15000.0,52,Yes,Recovered,3,Middle Age,Medium
+707,62,Male,Diabetes,Insulin Therapy,2000.0,50,No,Stable,4,Middle Age,Low
+708,35,Female,Fractured Arm,X-Ray and Splint,500.0,48,Yes,Recovered,5,Young Adult,Low
+709,78,Male,Stroke,CT Scan and Medication,10000.0,55,No,Stable,2,Senior,Medium
+710,53,Female,Cancer,Surgery and Chemotherapy,25000.0,57,Yes,Recovered,4,Middle Age,High
+711,72,Male,Hypertension,Medication and Counseling,1000.0,51,No,Stable,4,Senior,Low
+712,60,Female,Appendicitis,Appendectomy,8000.0,53,Yes,Recovered,3,Middle Age,Medium
+713,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,53,No,Recovered,4,Adult,Low
+714,75,Female,Heart Attack,Cardiac Catheterization,18000.0,55,Yes,Stable,2,Senior,High
+715,28,Male,Allergic Reaction,Epinephrine Injection,100.0,48,No,Recovered,5,Young Adult,Low
+716,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,49,No,Stable,4,Middle Age,Low
+717,67,Male,Prostate Cancer,Radiation Therapy,20000.0,56,No,Recovered,3,Senior,High
+718,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,50,No,Recovered,4,Young Adult,Medium
+719,50,Male,Kidney Stones,Lithotripsy,6000.0,51,No,Recovered,3,Adult,Medium
+720,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,52,No,Stable,4,Middle Age,Low
+721,48,Female,Heart Disease,Angioplasty,15000.0,53,Yes,Recovered,4,Adult,Medium
+723,30,Female,Fractured Arm,X-Ray and Splint,500.0,49,No,Recovered,5,Young Adult,Low
+724,70,Male,Stroke,CT Scan and Medication,10000.0,56,Yes,Stable,2,Senior,Medium
+725,55,Female,Cancer,Surgery and Chemotherapy,25000.0,58,No,Recovered,4,Middle Age,High
+726,68,Male,Hypertension,Medication and Counseling,1000.0,52,No,Stable,4,Senior,Low
+727,45,Female,Appendicitis,Appendectomy,8000.0,54,No,Recovered,3,Adult,Medium
+728,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,54,No,Recovered,4,Adult,Low
+729,78,Female,Heart Attack,Cardiac Catheterization,18000.0,56,Yes,Stable,2,Senior,High
+730,25,Male,Allergic Reaction,Epinephrine Injection,100.0,49,No,Recovered,5,Young Adult,Low
+731,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,50,No,Stable,4,Middle Age,Low
+732,58,Male,Prostate Cancer,Radiation Therapy,20000.0,57,No,Recovered,3,Middle Age,High
+733,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,51,No,Recovered,4,Young Adult,Medium
+734,55,Male,Kidney Stones,Lithotripsy,6000.0,52,No,Recovered,3,Middle Age,Medium
+735,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,53,No,Stable,4,Middle Age,Low
+736,55,Female,Heart Disease,Angioplasty,15000.0,54,Yes,Recovered,3,Middle Age,Medium
+737,62,Male,Diabetes,Insulin Therapy,2000.0,52,No,Stable,4,Middle Age,Low
+738,35,Female,Fractured Arm,X-Ray and Splint,500.0,50,Yes,Recovered,5,Young Adult,Low
+739,78,Male,Stroke,CT Scan and Medication,10000.0,57,No,Stable,2,Senior,Medium
+740,53,Female,Cancer,Surgery and Chemotherapy,25000.0,59,Yes,Recovered,4,Middle Age,High
+741,72,Male,Hypertension,Medication and Counseling,1000.0,53,No,Stable,4,Senior,Low
+742,60,Female,Appendicitis,Appendectomy,8000.0,55,Yes,Recovered,3,Middle Age,Medium
+743,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,55,No,Recovered,4,Adult,Low
+744,75,Female,Heart Attack,Cardiac Catheterization,18000.0,57,Yes,Stable,2,Senior,High
+745,28,Male,Allergic Reaction,Epinephrine Injection,100.0,50,No,Recovered,5,Young Adult,Low
+746,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,51,No,Stable,4,Middle Age,Low
+747,67,Male,Prostate Cancer,Radiation Therapy,20000.0,58,No,Recovered,3,Senior,High
+748,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,52,No,Recovered,4,Young Adult,Medium
+749,50,Male,Kidney Stones,Lithotripsy,6000.0,53,No,Recovered,3,Adult,Medium
+750,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,54,No,Stable,4,Middle Age,Low
+751,48,Female,Heart Disease,Angioplasty,15000.0,55,Yes,Recovered,4,Adult,Medium
+752,65,Male,Diabetes,Insulin Therapy,2000.0,53,No,Stable,3,Middle Age,Low
+753,30,Female,Fractured Arm,X-Ray and Splint,500.0,51,No,Recovered,5,Young Adult,Low
+754,70,Male,Stroke,CT Scan and Medication,10000.0,58,Yes,Stable,2,Senior,Medium
+755,55,Female,Cancer,Surgery and Chemotherapy,25000.0,60,No,Recovered,4,Middle Age,High
+756,68,Male,Hypertension,Medication and Counseling,1000.0,54,No,Stable,4,Senior,Low
+757,45,Female,Appendicitis,Appendectomy,8000.0,56,No,Recovered,3,Adult,Medium
+758,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,56,No,Recovered,4,Adult,Low
+759,78,Female,Heart Attack,Cardiac Catheterization,18000.0,58,Yes,Stable,2,Senior,High
+760,25,Male,Allergic Reaction,Epinephrine Injection,100.0,51,No,Recovered,5,Young Adult,Low
+761,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,52,No,Stable,4,Middle Age,Low
+762,58,Male,Prostate Cancer,Radiation Therapy,20000.0,59,No,Recovered,3,Middle Age,High
+763,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,53,No,Recovered,4,Young Adult,Medium
+764,55,Male,Kidney Stones,Lithotripsy,6000.0,54,No,Recovered,3,Middle Age,Medium
+765,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,55,No,Stable,4,Middle Age,Low
+766,55,Female,Heart Disease,Angioplasty,15000.0,56,Yes,Recovered,3,Middle Age,Medium
+767,62,Male,Diabetes,Insulin Therapy,2000.0,54,No,Stable,4,Middle Age,Low
+768,35,Female,Fractured Arm,X-Ray and Splint,500.0,52,Yes,Recovered,5,Young Adult,Low
+769,78,Male,Stroke,CT Scan and Medication,10000.0,59,No,Stable,2,Senior,Medium
+770,53,Female,Cancer,Surgery and Chemotherapy,25000.0,61,Yes,Recovered,4,Middle Age,High
+771,72,Male,Hypertension,Medication and Counseling,1000.0,55,No,Stable,4,Senior,Low
+772,60,Female,Appendicitis,Appendectomy,8000.0,57,Yes,Recovered,3,Middle Age,Medium
+773,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,57,No,Recovered,4,Adult,Low
+774,75,Female,Heart Attack,Cardiac Catheterization,18000.0,59,Yes,Stable,2,Senior,High
+775,28,Male,Allergic Reaction,Epinephrine Injection,100.0,52,No,Recovered,5,Young Adult,Low
+776,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,53,No,Stable,4,Middle Age,Low
+777,67,Male,Prostate Cancer,Radiation Therapy,20000.0,60,No,Recovered,3,Senior,High
+778,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,54,No,Recovered,4,Young Adult,Medium
+779,50,Male,Kidney Stones,Lithotripsy,6000.0,55,No,Recovered,3,Adult,Medium
+780,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,56,No,Stable,4,Middle Age,Low
+781,48,Female,Heart Disease,Angioplasty,15000.0,57,Yes,Recovered,4,Adult,Medium
+782,65,Male,Diabetes,Insulin Therapy,2000.0,55,No,Stable,3,Middle Age,Low
+783,30,Female,Fractured Arm,X-Ray and Splint,500.0,53,No,Recovered,5,Young Adult,Low
+785,55,Female,Cancer,Surgery and Chemotherapy,25000.0,62,No,Recovered,4,Middle Age,High
+786,68,Male,Hypertension,Medication and Counseling,1000.0,56,No,Stable,4,Senior,Low
+787,45,Female,Appendicitis,Appendectomy,8000.0,58,No,Recovered,3,Adult,Medium
+788,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,58,No,Recovered,4,Adult,Low
+789,78,Female,Heart Attack,Cardiac Catheterization,18000.0,60,Yes,Stable,2,Senior,High
+790,25,Male,Allergic Reaction,Epinephrine Injection,100.0,53,No,Recovered,5,Young Adult,Low
+791,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,54,No,Stable,4,Middle Age,Low
+792,58,Male,Prostate Cancer,Radiation Therapy,20000.0,61,No,Recovered,3,Middle Age,High
+793,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,55,No,Recovered,4,Young Adult,Medium
+794,55,Male,Kidney Stones,Lithotripsy,6000.0,56,No,Recovered,3,Middle Age,Medium
+795,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,57,No,Stable,4,Middle Age,Low
+796,55,Female,Heart Disease,Angioplasty,15000.0,58,Yes,Recovered,3,Middle Age,Medium
+797,62,Male,Diabetes,Insulin Therapy,2000.0,56,No,Stable,4,Middle Age,Low
+798,35,Female,Fractured Arm,X-Ray and Splint,500.0,54,Yes,Recovered,5,Young Adult,Low
+799,78,Male,Stroke,CT Scan and Medication,10000.0,61,No,Stable,2,Senior,Medium
+800,53,Female,Cancer,Surgery and Chemotherapy,25000.0,63,Yes,Recovered,4,Middle Age,High
+801,72,Male,Hypertension,Medication and Counseling,1000.0,57,No,Stable,4,Senior,Low
+802,60,Female,Appendicitis,Appendectomy,8000.0,59,Yes,Recovered,3,Middle Age,Medium
+803,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,59,No,Recovered,4,Adult,Low
+804,75,Female,Heart Attack,Cardiac Catheterization,18000.0,61,Yes,Stable,2,Senior,High
+805,28,Male,Allergic Reaction,Epinephrine Injection,100.0,54,No,Recovered,5,Young Adult,Low
+806,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,55,No,Stable,4,Middle Age,Low
+807,67,Male,Prostate Cancer,Radiation Therapy,20000.0,62,No,Recovered,3,Senior,High
+808,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,56,No,Recovered,4,Young Adult,Medium
+809,50,Male,Kidney Stones,Lithotripsy,6000.0,57,No,Recovered,3,Adult,Medium
+810,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,58,No,Stable,4,Middle Age,Low
+811,48,Female,Heart Disease,Angioplasty,15000.0,59,Yes,Recovered,4,Adult,Medium
+812,65,Male,Diabetes,Insulin Therapy,2000.0,57,No,Stable,3,Middle Age,Low
+813,30,Female,Fractured Arm,X-Ray and Splint,500.0,55,No,Recovered,5,Young Adult,Low
+814,70,Male,Stroke,CT Scan and Medication,10000.0,62,Yes,Stable,2,Senior,Medium
+815,55,Female,Cancer,Surgery and Chemotherapy,25000.0,64,No,Recovered,4,Middle Age,High
+816,68,Male,Hypertension,Medication and Counseling,1000.0,58,No,Stable,4,Senior,Low
+817,45,Female,Appendicitis,Appendectomy,8000.0,60,No,Recovered,3,Adult,Medium
+818,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,60,No,Recovered,4,Adult,Low
+819,78,Female,Heart Attack,Cardiac Catheterization,18000.0,62,Yes,Stable,2,Senior,High
+820,25,Male,Allergic Reaction,Epinephrine Injection,100.0,55,No,Recovered,5,Young Adult,Low
+821,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,56,No,Stable,4,Middle Age,Low
+822,58,Male,Prostate Cancer,Radiation Therapy,20000.0,63,No,Recovered,3,Middle Age,High
+823,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,57,No,Recovered,4,Young Adult,Medium
+824,55,Male,Kidney Stones,Lithotripsy,6000.0,58,No,Recovered,3,Middle Age,Medium
+825,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,59,No,Stable,4,Middle Age,Low
+826,55,Female,Heart Disease,Angioplasty,15000.0,60,Yes,Recovered,3,Middle Age,Medium
+827,62,Male,Diabetes,Insulin Therapy,2000.0,58,No,Stable,4,Middle Age,Low
+828,35,Female,Fractured Arm,X-Ray and Splint,500.0,56,Yes,Recovered,5,Young Adult,Low
+829,78,Male,Stroke,CT Scan and Medication,10000.0,63,No,Stable,2,Senior,Medium
+830,53,Female,Cancer,Surgery and Chemotherapy,25000.0,65,Yes,Recovered,4,Middle Age,High
+831,72,Male,Hypertension,Medication and Counseling,1000.0,59,No,Stable,4,Senior,Low
+832,60,Female,Appendicitis,Appendectomy,8000.0,61,Yes,Recovered,3,Middle Age,Medium
+833,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,61,No,Recovered,4,Adult,Low
+834,75,Female,Heart Attack,Cardiac Catheterization,18000.0,63,Yes,Stable,2,Senior,High
+835,28,Male,Allergic Reaction,Epinephrine Injection,100.0,56,No,Recovered,5,Young Adult,Low
+836,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,57,No,Stable,4,Middle Age,Low
+837,67,Male,Prostate Cancer,Radiation Therapy,20000.0,64,No,Recovered,3,Senior,High
+838,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,58,No,Recovered,4,Young Adult,Medium
+839,50,Male,Kidney Stones,Lithotripsy,6000.0,59,No,Recovered,3,Adult,Medium
+840,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,60,No,Stable,4,Middle Age,Low
+841,48,Female,Heart Disease,Angioplasty,15000.0,61,Yes,Recovered,4,Adult,Medium
+842,65,Male,Diabetes,Insulin Therapy,2000.0,59,No,Stable,3,Middle Age,Low
+843,30,Female,Fractured Arm,X-Ray and Splint,500.0,57,No,Recovered,5,Young Adult,Low
+844,70,Male,Stroke,CT Scan and Medication,10000.0,64,Yes,Stable,2,Senior,Medium
+846,68,Male,Hypertension,Medication and Counseling,1000.0,60,No,Stable,4,Senior,Low
+847,45,Female,Appendicitis,Appendectomy,8000.0,62,No,Recovered,3,Adult,Medium
+848,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,62,No,Recovered,4,Adult,Low
+849,78,Female,Heart Attack,Cardiac Catheterization,18000.0,64,Yes,Stable,2,Senior,High
+850,25,Male,Allergic Reaction,Epinephrine Injection,100.0,57,No,Recovered,5,Young Adult,Low
+851,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,58,No,Stable,4,Middle Age,Low
+852,58,Male,Prostate Cancer,Radiation Therapy,20000.0,65,No,Recovered,3,Middle Age,High
+853,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,59,No,Recovered,4,Young Adult,Medium
+854,55,Male,Kidney Stones,Lithotripsy,6000.0,60,No,Recovered,3,Middle Age,Medium
+855,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,61,No,Stable,4,Middle Age,Low
+856,55,Female,Heart Disease,Angioplasty,15000.0,62,Yes,Recovered,3,Middle Age,Medium
+857,62,Male,Diabetes,Insulin Therapy,2000.0,60,No,Stable,4,Middle Age,Low
+858,35,Female,Fractured Arm,X-Ray and Splint,500.0,58,Yes,Recovered,5,Young Adult,Low
+859,78,Male,Stroke,CT Scan and Medication,10000.0,65,No,Stable,2,Senior,Medium
+860,53,Female,Cancer,Surgery and Chemotherapy,25000.0,67,Yes,Recovered,4,Middle Age,High
+861,72,Male,Hypertension,Medication and Counseling,1000.0,61,No,Stable,4,Senior,Low
+862,60,Female,Appendicitis,Appendectomy,8000.0,63,Yes,Recovered,3,Middle Age,Medium
+863,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,63,No,Recovered,4,Adult,Low
+864,75,Female,Heart Attack,Cardiac Catheterization,18000.0,65,Yes,Stable,2,Senior,High
+865,28,Male,Allergic Reaction,Epinephrine Injection,100.0,58,No,Recovered,5,Young Adult,Low
+866,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,59,No,Stable,4,Middle Age,Low
+867,67,Male,Prostate Cancer,Radiation Therapy,20000.0,66,No,Recovered,3,Senior,High
+868,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,60,No,Recovered,4,Young Adult,Medium
+869,50,Male,Kidney Stones,Lithotripsy,6000.0,61,No,Recovered,3,Adult,Medium
+870,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,62,No,Stable,4,Middle Age,Low
+871,48,Female,Heart Disease,Angioplasty,15000.0,63,Yes,Recovered,4,Adult,Medium
+872,65,Male,Diabetes,Insulin Therapy,2000.0,61,No,Stable,3,Middle Age,Low
+873,30,Female,Fractured Arm,X-Ray and Splint,500.0,59,No,Recovered,5,Young Adult,Low
+874,70,Male,Stroke,CT Scan and Medication,10000.0,66,Yes,Stable,2,Senior,Medium
+875,55,Female,Cancer,Surgery and Chemotherapy,25000.0,68,No,Recovered,4,Middle Age,High
+876,68,Male,Hypertension,Medication and Counseling,1000.0,62,No,Stable,4,Senior,Low
+877,45,Female,Appendicitis,Appendectomy,8000.0,64,No,Recovered,3,Adult,Medium
+878,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,64,No,Recovered,4,Adult,Low
+879,78,Female,Heart Attack,Cardiac Catheterization,18000.0,66,Yes,Stable,2,Senior,High
+880,25,Male,Allergic Reaction,Epinephrine Injection,100.0,59,No,Recovered,5,Young Adult,Low
+881,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,60,No,Stable,4,Middle Age,Low
+882,58,Male,Prostate Cancer,Radiation Therapy,20000.0,67,No,Recovered,3,Middle Age,High
+883,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,61,No,Recovered,4,Young Adult,Medium
+884,55,Male,Kidney Stones,Lithotripsy,6000.0,62,No,Recovered,3,Middle Age,Medium
+885,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,63,No,Stable,4,Middle Age,Low
+886,55,Female,Heart Disease,Angioplasty,15000.0,64,Yes,Recovered,3,Middle Age,Medium
+887,62,Male,Diabetes,Insulin Therapy,2000.0,62,No,Stable,4,Middle Age,Low
+888,35,Female,Fractured Arm,X-Ray and Splint,500.0,60,Yes,Recovered,5,Young Adult,Low
+889,78,Male,Stroke,CT Scan and Medication,10000.0,67,No,Stable,2,Senior,Medium
+890,53,Female,Cancer,Surgery and Chemotherapy,25000.0,69,Yes,Recovered,4,Middle Age,High
+891,72,Male,Hypertension,Medication and Counseling,1000.0,63,No,Stable,4,Senior,Low
+892,60,Female,Appendicitis,Appendectomy,8000.0,65,Yes,Recovered,3,Middle Age,Medium
+893,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,65,No,Recovered,4,Adult,Low
+894,75,Female,Heart Attack,Cardiac Catheterization,18000.0,67,Yes,Stable,2,Senior,High
+895,28,Male,Allergic Reaction,Epinephrine Injection,100.0,60,No,Recovered,5,Young Adult,Low
+896,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,61,No,Stable,4,Middle Age,Low
+897,67,Male,Prostate Cancer,Radiation Therapy,20000.0,68,No,Recovered,3,Senior,High
+898,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,62,No,Recovered,4,Young Adult,Medium
+899,50,Male,Kidney Stones,Lithotripsy,6000.0,63,No,Recovered,3,Adult,Medium
+900,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,64,No,Stable,4,Middle Age,Low
+901,48,Female,Heart Disease,Angioplasty,15000.0,65,Yes,Recovered,4,Adult,Medium
+902,65,Male,Diabetes,Insulin Therapy,2000.0,63,No,Stable,3,Middle Age,Low
+903,30,Female,Fractured Arm,X-Ray and Splint,500.0,61,No,Recovered,5,Young Adult,Low
+904,70,Male,Stroke,CT Scan and Medication,10000.0,68,Yes,Stable,2,Senior,Medium
+905,55,Female,Cancer,Surgery and Chemotherapy,25000.0,70,No,Recovered,4,Middle Age,High
+907,45,Female,Appendicitis,Appendectomy,8000.0,66,No,Recovered,3,Adult,Medium
+908,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,66,No,Recovered,4,Adult,Low
+909,78,Female,Heart Attack,Cardiac Catheterization,18000.0,68,Yes,Stable,2,Senior,High
+910,25,Male,Allergic Reaction,Epinephrine Injection,100.0,61,No,Recovered,5,Young Adult,Low
+911,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,62,No,Stable,4,Middle Age,Low
+912,58,Male,Prostate Cancer,Radiation Therapy,20000.0,69,No,Recovered,3,Middle Age,High
+913,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,63,No,Recovered,4,Young Adult,Medium
+914,55,Male,Kidney Stones,Lithotripsy,6000.0,64,No,Recovered,3,Middle Age,Medium
+915,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,65,No,Stable,4,Middle Age,Low
+916,55,Female,Heart Disease,Angioplasty,15000.0,66,Yes,Recovered,3,Middle Age,Medium
+917,62,Male,Diabetes,Insulin Therapy,2000.0,64,No,Stable,4,Middle Age,Low
+918,35,Female,Fractured Arm,X-Ray and Splint,500.0,62,Yes,Recovered,5,Young Adult,Low
+919,78,Male,Stroke,CT Scan and Medication,10000.0,69,No,Stable,2,Senior,Medium
+920,53,Female,Cancer,Surgery and Chemotherapy,25000.0,71,Yes,Recovered,4,Middle Age,High
+921,72,Male,Hypertension,Medication and Counseling,1000.0,65,No,Stable,4,Senior,Low
+922,60,Female,Appendicitis,Appendectomy,8000.0,67,Yes,Recovered,3,Middle Age,Medium
+923,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,67,No,Recovered,4,Adult,Low
+924,75,Female,Heart Attack,Cardiac Catheterization,18000.0,69,Yes,Stable,2,Senior,High
+925,28,Male,Allergic Reaction,Epinephrine Injection,100.0,62,No,Recovered,5,Young Adult,Low
+926,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,63,No,Stable,4,Middle Age,Low
+927,67,Male,Prostate Cancer,Radiation Therapy,20000.0,70,No,Recovered,3,Senior,High
+928,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,64,No,Recovered,4,Young Adult,Medium
+929,50,Male,Kidney Stones,Lithotripsy,6000.0,65,No,Recovered,3,Adult,Medium
+930,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,66,No,Stable,4,Middle Age,Low
+931,48,Female,Heart Disease,Angioplasty,15000.0,67,Yes,Recovered,4,Adult,Medium
+932,65,Male,Diabetes,Insulin Therapy,2000.0,65,No,Stable,3,Middle Age,Low
+933,30,Female,Fractured Arm,X-Ray and Splint,500.0,63,No,Recovered,5,Young Adult,Low
+934,70,Male,Stroke,CT Scan and Medication,10000.0,70,Yes,Stable,2,Senior,Medium
+935,55,Female,Cancer,Surgery and Chemotherapy,25000.0,72,No,Recovered,4,Middle Age,High
+936,68,Male,Hypertension,Medication and Counseling,1000.0,66,No,Stable,4,Senior,Low
+937,45,Female,Appendicitis,Appendectomy,8000.0,68,No,Recovered,3,Adult,Medium
+938,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,68,No,Recovered,4,Adult,Low
+939,78,Female,Heart Attack,Cardiac Catheterization,18000.0,70,Yes,Stable,2,Senior,High
+940,25,Male,Allergic Reaction,Epinephrine Injection,100.0,63,No,Recovered,5,Young Adult,Low
+941,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,64,No,Stable,4,Middle Age,Low
+942,58,Male,Prostate Cancer,Radiation Therapy,20000.0,71,No,Recovered,3,Middle Age,High
+943,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,65,No,Recovered,4,Young Adult,Medium
+944,55,Male,Kidney Stones,Lithotripsy,6000.0,66,No,Recovered,3,Middle Age,Medium
+945,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,67,No,Stable,4,Middle Age,Low
+946,55,Female,Heart Disease,Angioplasty,15000.0,68,Yes,Recovered,3,Middle Age,Medium
+947,62,Male,Diabetes,Insulin Therapy,2000.0,66,No,Stable,4,Middle Age,Low
+948,35,Female,Fractured Arm,X-Ray and Splint,500.0,64,Yes,Recovered,5,Young Adult,Low
+949,78,Male,Stroke,CT Scan and Medication,10000.0,71,No,Stable,2,Senior,Medium
+950,53,Female,Cancer,Surgery and Chemotherapy,25000.0,73,Yes,Recovered,4,Middle Age,High
+951,72,Male,Hypertension,Medication and Counseling,1000.0,67,No,Stable,4,Senior,Low
+952,60,Female,Appendicitis,Appendectomy,8000.0,69,Yes,Recovered,3,Middle Age,Medium
+953,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,69,No,Recovered,4,Adult,Low
+954,75,Female,Heart Attack,Cardiac Catheterization,18000.0,71,Yes,Stable,2,Senior,High
+955,28,Male,Allergic Reaction,Epinephrine Injection,100.0,64,No,Recovered,5,Young Adult,Low
+956,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,65,No,Stable,4,Middle Age,Low
+957,67,Male,Prostate Cancer,Radiation Therapy,20000.0,72,No,Recovered,3,Senior,High
+958,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,66,No,Recovered,4,Young Adult,Medium
+959,50,Male,Kidney Stones,Lithotripsy,6000.0,67,No,Recovered,3,Adult,Medium
+960,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,68,No,Stable,4,Middle Age,Low
+961,48,Female,Heart Disease,Angioplasty,15000.0,69,Yes,Recovered,4,Adult,Medium
+962,65,Male,Diabetes,Insulin Therapy,2000.0,67,No,Stable,3,Middle Age,Low
+963,30,Female,Fractured Arm,X-Ray and Splint,500.0,65,No,Recovered,5,Young Adult,Low
+964,70,Male,Stroke,CT Scan and Medication,10000.0,72,Yes,Stable,2,Senior,Medium
+965,55,Female,Cancer,Surgery and Chemotherapy,25000.0,74,No,Recovered,4,Middle Age,High
+966,68,Male,Hypertension,Medication and Counseling,1000.0,68,No,Stable,4,Senior,Low
+968,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,70,No,Recovered,4,Adult,Low
+969,78,Female,Heart Attack,Cardiac Catheterization,18000.0,72,Yes,Stable,2,Senior,High
+970,25,Male,Allergic Reaction,Epinephrine Injection,100.0,65,No,Recovered,5,Young Adult,Low
+971,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,66,No,Stable,4,Middle Age,Low
+972,58,Male,Prostate Cancer,Radiation Therapy,20000.0,73,No,Recovered,3,Middle Age,High
+973,32,Female,Childbirth,Delivery and Postnatal Care,12000.0,67,No,Recovered,4,Young Adult,Medium
+974,55,Male,Kidney Stones,Lithotripsy,6000.0,68,No,Recovered,3,Middle Age,Medium
+975,65,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,69,No,Stable,4,Middle Age,Low
+976,55,Female,Heart Disease,Angioplasty,15000.0,70,Yes,Recovered,3,Middle Age,Medium
+977,62,Male,Diabetes,Insulin Therapy,2000.0,68,No,Stable,4,Middle Age,Low
+978,35,Female,Fractured Arm,X-Ray and Splint,500.0,66,Yes,Recovered,5,Young Adult,Low
+979,78,Male,Stroke,CT Scan and Medication,10000.0,73,No,Stable,2,Senior,Medium
+980,53,Female,Cancer,Surgery and Chemotherapy,25000.0,75,Yes,Recovered,4,Middle Age,High
+981,72,Male,Hypertension,Medication and Counseling,1000.0,69,No,Stable,4,Senior,Low
+982,60,Female,Appendicitis,Appendectomy,8000.0,71,Yes,Recovered,3,Middle Age,Medium
+983,45,Male,Fractured Leg,Cast and Physical Therapy,3000.0,71,No,Recovered,4,Adult,Low
+984,75,Female,Heart Attack,Cardiac Catheterization,18000.0,73,Yes,Stable,2,Senior,High
+985,28,Male,Allergic Reaction,Epinephrine Injection,100.0,67,No,Recovered,5,Young Adult,Low
+986,52,Female,Respiratory Infection,Antibiotics and Rest,800.0,68,No,Stable,4,Middle Age,Low
+987,67,Male,Prostate Cancer,Radiation Therapy,20000.0,74,No,Recovered,3,Senior,High
+988,35,Female,Childbirth,Delivery and Postnatal Care,12000.0,68,No,Recovered,4,Young Adult,Medium
+989,50,Male,Kidney Stones,Lithotripsy,6000.0,69,No,Recovered,3,Adult,Medium
+990,60,Female,Osteoarthritis,Physical Therapy and Pain Management,4000.0,70,No,Stable,4,Middle Age,Low
+991,48,Female,Heart Disease,Angioplasty,15000.0,71,Yes,Recovered,4,Adult,Medium
+992,65,Male,Diabetes,Insulin Therapy,2000.0,69,No,Stable,3,Middle Age,Low
+993,30,Female,Fractured Arm,X-Ray and Splint,500.0,67,No,Recovered,5,Young Adult,Low
+994,70,Male,Stroke,CT Scan and Medication,10000.0,74,Yes,Stable,2,Senior,Medium
+995,55,Female,Cancer,Surgery and Chemotherapy,25000.0,76,No,Recovered,4,Middle Age,High
+996,68,Male,Hypertension,Medication and Counseling,1000.0,70,No,Stable,4,Senior,Low
+997,45,Female,Appendicitis,Appendectomy,8000.0,72,No,Recovered,3,Adult,Medium
+998,40,Male,Fractured Leg,Cast and Physical Therapy,3000.0,72,No,Recovered,4,Adult,Low
+999,78,Female,Heart Attack,Cardiac Catheterization,18000.0,74,Yes,Stable,2,Senior,High
+1000,25,Male,Allergic Reaction,Epinephrine Injection,100.0,68,No,Recovered,5,Young Adult,Low
